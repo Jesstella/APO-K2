@@ -18,4 +18,4 @@ Inside the directory 'all_campaigns_together', there are four sub-directories, c
 7. apok2_k2_density.csv -- This 10 x 10 grid contains the relative number density of stars in each bin, with the bin edges corresponding to file 1. This relative density is the result of dividing file 6 by file 5 (i.e. APO-K2 Stars / K2 Observed Stars). 
 
 **Notes on recreating the Selection Function: **
-*  
+
