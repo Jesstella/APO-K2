@@ -1,4 +1,4 @@
-Selection Function Documentation: 
+**Selection Function Documentation: **
 
 This selection function directory contains four subdirectories, which contain the selection function data derived in the APO-K2 Catalog Paper 1. 
 The file 'all_campaigns_together', contains the selection function tables when all data is considered as one catalog, the remaining four directories hold data for each of the selection function parameter spaces over all campaigns individually, so the user can see how the selection function changes over campaign. 
@@ -17,5 +17,5 @@ Inside the directory 'all_campaigns_together', there are four sub-directories, c
 6. k2_density_(apok2).csv -- This 10 x 10 grid contains the amount of stars that fall into each bin in the parameter space for the K2 observed data, with the bin edges given in file 1. NB: This file differs from k2_density_(sim) because in this second plot, the K2 observed stars are cut to the determined parameter space of the APO-K2 catalog, in order to populate the 10 x 10 bin within the limits provided. It will therefore contain less stars than the k2_density_(sim).csv and users wanting the full K2 observed sample should use file 3. 
 7. apok2_k2_density.csv -- This 10 x 10 grid contains the relative number density of stars in each bin, with the bin edges corresponding to file 1. This relative density is the result of dividing file 6 by file 5 (i.e. APO-K2 Stars / K2 Observed Stars). 
 
-Notes on recreating the Selection Function: 
-- 
+**Notes on recreating the Selection Function: **
+*  
