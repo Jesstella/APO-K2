@@ -1,4 +1,4 @@
-Selection Function Documentation 
+Selection Function Documentation: 
 
 This selection function directory contains four subdirectories, which contain the selection function data derived in the APO-K2 Catalog Paper 1. 
 The file 'all_campaigns_together', contains the selection function tables when all data is considered as one catalog, the remaining four directories hold data for each of the selection function parameter spaces over all campaigns individually, so the user can see how the selection function changes over campaign. 
