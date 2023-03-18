@@ -22,5 +22,5 @@ Notes on recreating the Selection Function:
 -
 
 * The plots that appear in the paper are scaled for the reader to clearly see changes in the relative amount of stars over the parameter space. However, these files are saved before any of this scaling takes place, in order to provide the user with the rawest data for their uses. The paper describes how scaling can be added. 
-* As mentioned above, the density numbers are provided in the rawest possible 
+* All of the simulated stars are subject to a 0.1 multiplier. When the simulated sample was originally created, it was oversampled by around 10x. In order to give a more realistic representation of the full sample as it related to the observed samples, we multiple each of the bins in the simulated sample by 0.1. This will effect file 2 and 4 only.  
 
