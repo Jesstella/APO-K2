@@ -21,5 +21,6 @@ Inside the directory 'all_campaigns_together', there are four sub-directories, c
 Notes on recreating the Selection Function: 
 -
 
-* 
+* The plots that appear in the paper are scaled for the reader to clearly see changes in the relative amount of stars over the parameter space. However, these files are saved before any of this scaling takes place, in order to provide the user with the rawest data for their uses. The paper describes how scaling can be added. 
+* As mentioned above, the density numbers are provided in the rawest possible 
 
