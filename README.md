@@ -38,7 +38,6 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | alpha_flag | dimensionless | int | Flag depicting high- or low-alpha targets. | 
 | fdnu_flag | dimensionless | float | Flag on fdnu. | 
 
-
 * If this target was observed in multiple campaigns, these are contained in a list for the target's row. 
 For selection function data, please see the README in the file 'Selection Function' file. 
 
