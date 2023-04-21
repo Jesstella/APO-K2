@@ -10,7 +10,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 |--------|------|-----------|-------------| 
 | epic   | dimensionless | int | EPIC ID from the EPIC catalog. | 
 | apogee | dimensionless | string | APOGEE ID from APOGEE DR17. | 
-| camp   | dimensionless | string | Campaign number of the observation.* |
+| camp   | dimensionless | string | Campaign number of the observation.[1] |
 | glat   | degrees | float | Galactic Latitude of the target. |
 | glon   | degrees | float | Galactic Longitude of the target. | 
 | ev     | dimensionless | string | The Evolutionary State of the target. | 
@@ -38,7 +38,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | alpha_flag | dimensionless | int | Flag depicting high- or low-alpha targets. | 
 | fdnu_flag | dimensionless | float | Flag on fdnu. | 
 
-- * If this target was observed in multiple campaigns, these are contained in a list for the target's row. 
+[1] If this target was observed in multiple campaigns, these are contained in a list for the target's row. 
 For selection function data, please see the README in the file 'Selection Function' file. 
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
