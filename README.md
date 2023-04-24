@@ -4,6 +4,8 @@ Welcome to the companion GitHub to the APO-K2 Catalog Release.
 NB: The APO-K2 paper is current in submission and these numbers might be liable to change with improvements to the catalog. The current version of the PDF for the catalog can be found here: 
 https://www.jessicastasik.com/_files/ugd/7c73a7_9cf838f60fe945e4b0342d8d4115c1f7.pdf
 
+The selection function file contains its own readme file describing how to use the selection function products. 
+
 The publically available APO-K2 catalog is named in this directory as 'apo_k2_public_catalog.csv' and below is a detailed breakdown of each of the columns. 
 
 | Column | Unit | Data Type | Description | 
