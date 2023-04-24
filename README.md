@@ -25,11 +25,11 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | jk | mag | float | J-K color. | 
 | numax | microhertz | float | Frequency of maximum oscillation power derived from K2 asteroseismology. | 
 | dnu | microhertz | float | Large frequency separation devived from K2 asteroseismology. | 
-| fdnu | dimensionless | float | Correction on large frequency separation. |
-| kappa_m | dimensionless | float | Kappa coefficient for mass. | 
+| fdnu | dimensionless | float | Large frequency correction. |
+| kappa_m | dimensionless | float | Mass coefficient. | 
 | mass | M_sun | float | Asteroseismically-derived mass. | 
 | mass_err | M_sun | float | Error on mass. | 
-| kappa_r | dimensionless | float | Kappa coefficient for radius. | 
+| kappa_r | dimensionless | float | Radius coefficient. | 
 | radius | R_sun | float | Asteroseismically-derived radius. | 
 | radius_err | R_sun | float | Error on radius. | 
 | ecc | dimensionless | float | Galactic eccentricity of the target. | 
@@ -42,3 +42,4 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 For selection function data, please see the README in the file 'Selection Function' file. 
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
+Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
