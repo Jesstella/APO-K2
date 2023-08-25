@@ -12,8 +12,10 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 |--------|------|-----------|-------------| 
 | epic   | dimensionless | int | EPIC ID from the EPIC catalog. | 
 | apogee | dimensionless | string | APOGEE ID from APOGEE DR17. | 
-| gaia   | dimensionless | numpy | Gaia EDR3 source ID. | 
+| gaia_source   | dimensionless | numpy | Gaia EDR3 source ID. | 
 | camp   | dimensionless | string | Campaign number of the observation.[1] |
+| ra     | degrees | float | Right Ascension from the EPIC catalog. | 
+| dec    | degrees | float | Declination from the EPIC catalog. | 
 | glat   | degrees | float | Galactic Latitude of the target. |
 | glon   | degrees | float | Galactic Longitude of the target. | 
 | ev     | dimensionless | string | The Evolutionary State of the target. | 
@@ -26,12 +28,14 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | feh | dex | float | [Fe/H] from APOGEE. |
 | feh_err | dex | float | [Fe/H] error from APOGEE. | 
 | alpham | dex | float | [Alpha/M] from APOGEE. | 
-| alpham_err | dex | float | [Alpha/M] error from APOGEE.]
-| alpha_flag | dimensionless | int | Flag depicting high- or low-alpha targets. | 
+| alpham_err | dex | float | [Alpha/M] error from APOGEE.|
+| alpha_flags | dimensionless | int | Flag depicting high- or low-alpha targets. | 
 | vmag | mag | float | V-band magnitude. | 
 | vmag_err | mag | float | V-band magnitude error. | 
 | jmag | mag | float | J-band magnitude. | 
 | jmag_err | mag | float | J-band magnitude error. | 
+| kmag | mag | float | K-band magnitude. |
+| kmag_err | mag | float | K-band magnitude error. | 
 | jk | mag | float | J-K color. | 
 | j_k_err | mag | flat | J-K color error. |  
 | numax | microhertz | float | Frequency of maximum oscillation power derived from K2 asteroseismology. | 
@@ -40,7 +44,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | dnu_err | microhertz | float | Error on the large frequency separation derived from K2 asteroseismology. | 
 | fdnu | dimensionless | float | Large frequency correction. |
 | fdnu_err | dimensionless | float | Error on the large frequency correction. | 
-| fdnu_flag | dimensionless | float | Flag on fdnu. | 
+| fdnu_flags | dimensionless | float | Flag on fdnu. | 
 | kappa_m | dimensionless | float | Mass coefficient. | 
 | kappa_m_err | dimensionless | float | Error on mass coefficient. | 
 | mass | M_sun | float | Asteroseismically-derived mass. | 
@@ -53,10 +57,18 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | para_err | mas | float | Error on corrected parallax from Gaia DR3. | 
 | ecc | dimensionless | float | Galactic eccentricity of the target. | 
 | ecc_err | dimensionless | float | Error on galactic eccentricity of the target. | 
+| zmax | kpc | float | Greatest distance of target from the Galactic plane during orbit. | 
+| zmax_err | kpc | float | Error on zmax | 
 | ang_mom | kpc km s^-1 | float | Angular momentum. | 
 | ang_mom_err | kpc km s^-1 | float | Error on angular momentum. | 
 | tot_energy | km^2 s^-2 | float | Total energy. | 
 | tot_energy_err | km^2 s^-2 | float | Error on total energy. | 
+| u    | km s^-1 | float | Positive velocity towards the Galactic center. | 
+| u_err | km s^-1 | float | Error on U. | 
+| v    | km s^-1 | float | Positive velocity towards the direction of Galactic rotation. | 
+| v_err | km s^-1 | float | Error on V. | 
+| w    | km s^-1 | float | Positive velocity towards the North Galactic Pole. | 
+| w_err | km s^-1 | float | Error on W. | 
 | gaia_binary_flag | numpy | float | Binary flag from Gaia DR3. | 
 
 [1] If this target was observed in multiple campaigns, these are contained in a list for the target's row. 
