@@ -19,9 +19,9 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | glat   | degrees | float | Galactic Latitude of the target. |
 | glon   | degrees | float | Galactic Longitude of the target. | 
 | ev     | dimensionless | string | The Evolutionary State of the target. | 
-| teff   | kelvin | float | Effective temperature from APOGEE. | 
+| teff   | kelvin | float | Calibrated effective temperature from APOGEE. | 
 | teff_err | kelvin | float | Error on the APOGEE effective temperature. | 
-| logg | dex | float | Surface gravity of target. | 
+| logg | dex | float | Calibratred surface gravity of target. | 
 | logg_err | dex | float | Error on surface gravity. | 
 | meh | dex | float | [M/H] from APOGEE. | 
 | meh_err | dex | float | [M/H] error from APOGEE.| 
@@ -55,23 +55,24 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | radius_err | R_sun | float | Error on radius. | 
 | para | mas | float | Corrected parallax from Gaia DR3. | 
 | para_err | mas | float | Error on corrected parallax from Gaia DR3. | 
-| ecc | dimensionless | float | Galactic eccentricity of the target. | 
+| ecc | dimensionless | float | Galactic eccentricity of the target. [2]| 
 | ecc_err | dimensionless | float | Error on galactic eccentricity of the target. | 
 | zmax | kpc | float | Greatest distance of target from the Galactic plane during orbit. | 
 | zmax_err | kpc | float | Error on zmax | 
-| ang_mom | kpc km s^-1 | float | Angular momentum. | 
-| ang_mom_err | kpc km s^-1 | float | Error on angular momentum. | 
-| tot_energy | km^2 s^-2 | float | Total energy. | 
-| tot_energy_err | km^2 s^-2 | float | Error on total energy. | 
+| ang_mom | kpc km s$`^{-1}`$ | float | Angular momentum. | 
+| ang_mom_err | kpc km s$`^{-1}`$ | float | Error on angular momentum. | 
+| tot_energy | km$`^2`$ s$`^{-2}`$ | float | Total energy. | 
+| tot_energy_err | km$`^2`$ s$`^{-2}`$ | float | Error on total energy. | 
 | u    | km s$`^{-1}`$ | float | Positive velocity towards the Galactic center. | 
-| u_err | km s$`^{-1}'$ | float | Error on U. | 
-| v    | km s^-1 | float | Positive velocity towards the direction of Galactic rotation. | 
-| v_err | km s^-1 | float | Error on V. | 
-| w    | km s^-1 | float | Positive velocity towards the North Galactic Pole. | 
-| w_err | km s^-1 | float | Error on W. | 
+| u_err | km s$`^{-1}`$ | float | Error on U. | 
+| v    | km s$`^{-1}`$ | float | Positive velocity towards the direction of Galactic rotation. | 
+| v_err | km s$`^{-1}`$ | float | Error on V. | 
+| w    | km s$`^{-1}`$ | float | Positive velocity towards the North Galactic Pole. | 
+| w_err | km s$`^{-1}`$ | float | Error on W. | 
 | gaia_binary_flag | numpy | float | Binary flag from Gaia DR3. | 
 
 [1] If this target was observed in multiple campaigns, these are contained in a list for the target's row. 
+[2] For stars in these columns without data a float value of -999.0 is used and should be removed by the user. 
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
 Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
