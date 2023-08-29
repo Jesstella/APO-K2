@@ -29,7 +29,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | feh_err | dex | float | [Fe/H] error from APOGEE. | 
 | alpham | dex | float | [Alpha/M] from APOGEE. | 
 | alpham_err | dex | float | [Alpha/M] error from APOGEE.|
-| alpha_flags | dimensionless | int | Flag depicting high- or low-alpha targets. | 
+| alpha_flags | dimensionless | int | Flag depicting high- or low-alpha targets. [5]| 
 | vmag | mag | float | V-band magnitude. | 
 | vmag_err | mag | float | V-band magnitude error. | 
 | jmag | mag | float | J-band magnitude. | 
@@ -77,7 +77,9 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 
 [3] The second flag pertains to the $`f_{\Delta\nu}`$, where 0.0 corresponds $`f_{\Delta\nu}`$ value within the bounds of the grid and with a complete [Fe/H], the value is 1.0 if the value is computed by extrapolating beyond the bounds of the $`f_{\Delta\nu}`$ grid, and 2.0 if there is incomplete [Fe/H], T$`_{\mathrm{eff}}`$, $`\nu_{\mathrm{max}}`$, or $`\Delta\nu`$ information to compute $`f_{\Delta\nu}`$.
 
-[4] This flag will be nonzero if either of the following are true: the star is flagged in the $`\texttt{non\_single\_star}`$ column of DR3 or the $`\texttt{fidelity\_v2}`$ value from Rybizki2022 is $`\leq`$ 0.5 or unavailable.
+[4] This flag will be nonzero if either of the following are true: the star is flagged in the $`\texttt{non\_single\_star}`$ column of DR3 or the $`\texttt{fidelity\_v2}`$ value from Rybizki et al. (2022) (https://arxiv.org/abs/2101.11641) is $`\leq`$ 0.5 or unavailable.
+
+[5] A value of 0 is $`\alpha`$-poor, and a value of 1 is $`\alpha`$-rich. Stars falling within $`2\sigma`$ of this ridge-line are given a value of -1. See Warfield et al. (in prep.) 
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
 Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
