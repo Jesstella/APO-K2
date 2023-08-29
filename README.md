@@ -69,13 +69,15 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | v_err | km s$`^{-1}`$ | float | Error on V. [2]| 
 | w    | km s$`^{-1}`$ | float | Positive velocity towards the North Galactic Pole. [2]| 
 | w_err | km s$`^{-1}`$ | float | Error on W. [2]| 
-| gaia_binary_flag | numpy | float | Binary flag from Gaia DR3. | 
+| gaia_binary_flag | numpy | float | Binary flag from Gaia DR3. [4]| 
 
 [1] If this target was observed in multiple campaigns, these are contained in a list for the target's row.
 
 [2] For stars in these columns without data a float value of -999.0 is used and should be removed by the user. 
 
 [3] The second flag pertains to the $`f_{\Delta\nu}`$, where 0.0 corresponds $`f_{\Delta\nu}`$ value within the bounds of the grid and with a complete [Fe/H], the value is 1.0 if the value is computed by extrapolating beyond the bounds of the $`f_{\Delta\nu}`$ grid, and 2.0 if there is incomplete [Fe/H], T$`_{\mathrm{eff}}`$, $`\nu_{\mathrm{max}}`$, or $`\Delta\nu`$ information to compute $`f_{\Delta\nu}`$.
+
+[4] This flag will be nonzero if either of the following are true: the star is flagged in the $`\texttt{non\_single\_star}`$ column of DR3 or the $`\texttt{fidelity\_v2}`$ value from Rybizki2022 is $`\leq`$ 0.5 or unavailable.
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
 Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
