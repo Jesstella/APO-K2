@@ -47,28 +47,28 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | fdnu_flags | dimensionless | float | Flag on fdnu. | 
 | kappa_m | dimensionless | float | Mass coefficient. | 
 | kappa_m_err | dimensionless | float | Error on mass coefficient. | 
-| mass | M_sun | float | Asteroseismically-derived mass. | 
-| mass_err | M_sun | float | Error on mass. | 
+| mass | M$`{_\odot}`$ | float | Asteroseismically-derived mass. | 
+| mass_err | M$`{_\odot}`$ | float | Error on mass. | 
 | kappa_r | dimensionless | float | Radius coefficient. | 
 | kappa_r_err | dimensionless | float | Error on radius coefficient. | 
-| radius | R_sun | float | Asteroseismically-derived radius. | 
-| radius_err | R_sun | float | Error on radius. | 
+| radius | R$`{_\odot}`$ | float | Asteroseismically-derived radius. | 
+| radius_err | R$`{_\odot}`$ | float | Error on radius. | 
 | para | mas | float | Corrected parallax from Gaia DR3. | 
 | para_err | mas | float | Error on corrected parallax from Gaia DR3. | 
 | ecc | dimensionless | float | Galactic eccentricity of the target. [2]| 
-| ecc_err | dimensionless | float | Error on galactic eccentricity of the target. | 
-| zmax | kpc | float | Greatest distance of target from the Galactic plane during orbit. | 
-| zmax_err | kpc | float | Error on zmax | 
-| ang_mom | kpc km s$`^{-1}`$ | float | Angular momentum. | 
-| ang_mom_err | kpc km s$`^{-1}`$ | float | Error on angular momentum. | 
-| tot_energy | km$`^2`$ s$`^{-2}`$ | float | Total energy. | 
-| tot_energy_err | km$`^2`$ s$`^{-2}`$ | float | Error on total energy. | 
-| u    | km s$`^{-1}`$ | float | Positive velocity towards the Galactic center. | 
-| u_err | km s$`^{-1}`$ | float | Error on U. | 
-| v    | km s$`^{-1}`$ | float | Positive velocity towards the direction of Galactic rotation. | 
-| v_err | km s$`^{-1}`$ | float | Error on V. | 
-| w    | km s$`^{-1}`$ | float | Positive velocity towards the North Galactic Pole. | 
-| w_err | km s$`^{-1}`$ | float | Error on W. | 
+| ecc_err | dimensionless | float | Error on galactic eccentricity of the target. [2]| 
+| zmax | kpc | float | Greatest distance of target from the Galactic plane during orbit. [2]| 
+| zmax_err | kpc | float | Error on zmax [2]| 
+| ang_mom | kpc km s$`^{-1}`$ | float | Angular momentum. [2]| 
+| ang_mom_err | kpc km s$`^{-1}`$ | float | Error on angular momentum. [2]| 
+| tot_energy | km$`^2`$ s$`^{-2}`$ | float | Total energy. [2]| 
+| tot_energy_err | km$`^2`$ s$`^{-2}`$ | float | Error on total energy. [2]| 
+| u    | km s$`^{-1}`$ | float | Positive velocity towards the Galactic center. [2]| 
+| u_err | km s$`^{-1}`$ | float | Error on U. [2]| 
+| v    | km s$`^{-1}`$ | float | Positive velocity towards the direction of Galactic rotation. [2]| 
+| v_err | km s$`^{-1}`$ | float | Error on V. [2]| 
+| w    | km s$`^{-1}`$ | float | Positive velocity towards the North Galactic Pole. [2]| 
+| w_err | km s$`^{-1}`$ | float | Error on W. [2]| 
 | gaia_binary_flag | numpy | float | Binary flag from Gaia DR3. | 
 
 [1] If this target was observed in multiple campaigns, these are contained in a list for the target's row. 
