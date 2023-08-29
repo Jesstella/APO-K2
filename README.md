@@ -29,7 +29,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | feh_err | dex | float | [Fe/H] error from APOGEE. | 
 | alpham | dex | float | [Alpha/M] from APOGEE. | 
 | alpham_err | dex | float | [Alpha/M] error from APOGEE.|
-| alpha_flags | dimensionless | int | Flag depicting high- or low-alpha targets. [5]| 
+| alpha_flags | dimensionless | int | Flag depicting high- or low-alpha targets. [2]| 
 | vmag | mag | float | V-band magnitude. | 
 | vmag_err | mag | float | V-band magnitude error. | 
 | jmag | mag | float | J-band magnitude. | 
@@ -55,31 +55,31 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | radius_err | R$`{_\odot}`$ | float | Error on radius. | 
 | para | mas | float | Corrected parallax from Gaia DR3. | 
 | para_err | mas | float | Error on corrected parallax from Gaia DR3. | 
-| ecc | dimensionless | float | Galactic eccentricity of the target. [2]| 
-| ecc_err | dimensionless | float | Error on galactic eccentricity of the target. [2]| 
-| zmax | kpc | float | Greatest distance of target from the Galactic plane during orbit. [2]| 
-| zmax_err | kpc | float | Error on zmax [2]| 
-| ang_mom | kpc km s$`^{-1}`$ | float | Angular momentum. [2]| 
-| ang_mom_err | kpc km s$`^{-1}`$ | float | Error on angular momentum. [2]| 
-| tot_energy | km$`^2`$ s$`^{-2}`$ | float | Total energy. [2]| 
-| tot_energy_err | km$`^2`$ s$`^{-2}`$ | float | Error on total energy. [2]| 
-| u    | km s$`^{-1}`$ | float | Positive velocity towards the Galactic center. [2]| 
-| u_err | km s$`^{-1}`$ | float | Error on U. [2]| 
-| v    | km s$`^{-1}`$ | float | Positive velocity towards the direction of Galactic rotation. [2]| 
-| v_err | km s$`^{-1}`$ | float | Error on V. [2]| 
-| w    | km s$`^{-1}`$ | float | Positive velocity towards the North Galactic Pole. [2]| 
-| w_err | km s$`^{-1}`$ | float | Error on W. [2]| 
+| ecc | dimensionless | float | Galactic eccentricity of the target. [4]| 
+| ecc_err | dimensionless | float | Error on galactic eccentricity of the target. [4]| 
+| zmax | kpc | float | Greatest distance of target from the Galactic plane during orbit. [4]| 
+| zmax_err | kpc | float | Error on zmax [4]| 
+| ang_mom | kpc km s$`^{-1}`$ | float | Angular momentum. [4]| 
+| ang_mom_err | kpc km s$`^{-1}`$ | float | Error on angular momentum. [4]| 
+| tot_energy | km$`^2`$ s$`^{-2}`$ | float | Total energy. [4]| 
+| tot_energy_err | km$`^2`$ s$`^{-2}`$ | float | Error on total energy. [4]| 
+| u    | km s$`^{-1}`$ | float | Positive velocity towards the Galactic center. [4]| 
+| u_err | km s$`^{-1}`$ | float | Error on U. [4]| 
+| v    | km s$`^{-1}`$ | float | Positive velocity towards the direction of Galactic rotation. [4]| 
+| v_err | km s$`^{-1}`$ | float | Error on V. [4]| 
+| w    | km s$`^{-1}`$ | float | Positive velocity towards the North Galactic Pole. [4]| 
+| w_err | km s$`^{-1}`$ | float | Error on W. [4]| 
 | gaia_binary_flag | numpy | float | Binary flag from Gaia DR3. [4]| 
 
 [1] If this target was observed in multiple campaigns, these are contained in a list for the target's row.
 
-[2] For stars in these columns without data a float value of -999.0 is used and should be removed by the user. 
+[2] A value of 0 is $`\alpha`$-poor, and a value of 1 is $`\alpha`$-rich. Stars falling within $`2\sigma`$ of this ridge-line are given a value of -1. See Warfield et al. (in prep.) 
 
 [3] The second flag pertains to the $`f_{\Delta\nu}`$, where 0.0 corresponds $`f_{\Delta\nu}`$ value within the bounds of the grid and with a complete [Fe/H], the value is 1.0 if the value is computed by extrapolating beyond the bounds of the $`f_{\Delta\nu}`$ grid, and 2.0 if there is incomplete [Fe/H], T$`_{\mathrm{eff}}`$, $`\nu_{\mathrm{max}}`$, or $`\Delta\nu`$ information to compute $`f_{\Delta\nu}`$.
 
-[4] This flag will be nonzero if either of the following are true: the star is flagged in the $`\texttt{non\_single\_star}`$ column of DR3 or the $`\texttt{fidelity\_v2}`$ value from Rybizki et al. (2022) (https://arxiv.org/abs/2101.11641) is $`\leq`$ 0.5 or unavailable.
+[4] For stars in these columns without data a float value of -999.0 is used and should be removed by the user. 
 
-[5] A value of 0 is $`\alpha`$-poor, and a value of 1 is $`\alpha`$-rich. Stars falling within $`2\sigma`$ of this ridge-line are given a value of -1. See Warfield et al. (in prep.) 
+[5] This flag will be nonzero if either of the following are true: the star is flagged in the $`\texttt{non\_single\_star}`$ column of DR3 or the $`\texttt{fidelity\_v2}`$ value from Rybizki et al. (2022) (https://arxiv.org/abs/2101.11641) is $`\leq`$ 0.5 or unavailable.
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
 Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
