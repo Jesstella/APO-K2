@@ -44,7 +44,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | dnu_err | microhertz | float | Error on the large frequency separation derived from K2 asteroseismology. | 
 | fdnu | dimensionless | float | Large frequency correction. |
 | fdnu_err | dimensionless | float | Error on the large frequency correction. | 
-| fdnu_flags | dimensionless | float | Flag on fdnu. | 
+| fdnu_flags | dimensionless | float | Flag on fdnu. [3]| 
 | kappa_m | dimensionless | float | Mass coefficient. | 
 | kappa_m_err | dimensionless | float | Error on mass coefficient. | 
 | mass | M$`{_\odot}`$ | float | Asteroseismically-derived mass. | 
@@ -71,8 +71,11 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | w_err | km s$`^{-1}`$ | float | Error on W. [2]| 
 | gaia_binary_flag | numpy | float | Binary flag from Gaia DR3. | 
 
-[1] If this target was observed in multiple campaigns, these are contained in a list for the target's row. 
+[1] If this target was observed in multiple campaigns, these are contained in a list for the target's row.
+
 [2] For stars in these columns without data a float value of -999.0 is used and should be removed by the user. 
+
+[3] The second flag pertains to the $`f_{\Delta\nu}`$, where 0.0 corresponds $`f_{\Delta\nu}`$ value within the bounds of the grid and with a complete [Fe/H], the value is 1.0 if the value is computed by extrapolating beyond the bounds of the $`f_{\Delta\nu}`$ grid, and 2.0 if there is incomplete [Fe/H], T$`_{\mathrm{eff}}`$, $`\nu_{\mathrm{max}}`$, or $`\Delta\nu`$ information to compute $`f_{\Delta\nu}`$.
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
 Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
