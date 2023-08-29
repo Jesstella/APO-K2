@@ -4,7 +4,7 @@ Welcome to the companion GitHub to the APO-K2 Catalog Release.
 NB: The APO-K2 paper is current in submission and these numbers might be liable to change with improvements to the catalog. The current version of the PDF for the catalog can be found here: 
 https://www.jessicastasik.com/_files/ugd/7c73a7_9cf838f60fe945e4b0342d8d4115c1f7.pdf
 
-The selection function file contains its own readme file describing how to use the selection function products. 
+The selection function file contains its own README file describing how to use the selection function products. 
 
 The publically available APO-K2 catalog is named in this directory as 'apo_k2_public_catalog.csv' and below is a detailed breakdown of each of the columns. 
 
@@ -63,7 +63,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | ang_mom_err | kpc km s^-1 | float | Error on angular momentum. | 
 | tot_energy | km^2 s^-2 | float | Total energy. | 
 | tot_energy_err | km^2 s^-2 | float | Error on total energy. | 
-| u    | km s^-1 | float | Positive velocity towards the Galactic center. | 
+| u    | km $s^-1$ | float | Positive velocity towards the Galactic center. | 
 | u_err | km s^-1 | float | Error on U. | 
 | v    | km s^-1 | float | Positive velocity towards the direction of Galactic rotation. | 
 | v_err | km s^-1 | float | Error on V. | 
@@ -72,7 +72,6 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | gaia_binary_flag | numpy | float | Binary flag from Gaia DR3. | 
 
 [1] If this target was observed in multiple campaigns, these are contained in a list for the target's row. 
-For selection function data, please see the README in the file 'Selection Function' file. 
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
 Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
