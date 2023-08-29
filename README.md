@@ -64,7 +64,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 | tot_energy | km^2 s^-2 | float | Total energy. | 
 | tot_energy_err | km^2 s^-2 | float | Error on total energy. | 
 | u    | km s$`^{-1}`$ | float | Positive velocity towards the Galactic center. | 
-| u_err | km s^-1 | float | Error on U. | 
+| u_err | km s$`^{-1}'$ | float | Error on U. | 
 | v    | km s^-1 | float | Positive velocity towards the direction of Galactic rotation. | 
 | v_err | km s^-1 | float | Error on V. | 
 | w    | km s^-1 | float | Positive velocity towards the North Galactic Pole. | 
