@@ -73,7 +73,7 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 
 [1] If this target was observed in multiple campaigns, these are contained in a list for the target's row.
 
-[2] A value of 0 is $`\alpha`$-poor, and a value of 1 is $`\alpha`$-rich. Stars falling within $`2\sigma`$ of this ridge-line are given a value of -1. See Warfield et al. (in prep.) 
+[2] A value of 0 is $`\alpha`$-poor, and a value of 1 is $`\alpha`$-rich. Stars falling within $`2\sigma`$ of this ridge-line are given a value of -1. See [Warfield et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240316250W/abstract) 
 
 [3] The second flag pertains to the $`f_{\Delta\nu}`$, where 0.0 corresponds $`f_{\Delta\nu}`$ value within the bounds of the grid and with a complete [Fe/H], the value is 1.0 if the value is computed by extrapolating beyond the bounds of the $`f_{\Delta\nu}`$ grid, and 2.0 if there is incomplete [Fe/H], T$`_{\mathrm{eff}}`$, $`\nu_{\mathrm{max}}`$, or $`\Delta\nu`$ information to compute $`f_{\Delta\nu}`$.
 
