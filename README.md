@@ -1,5 +1,6 @@
 # APO-K2
 **** SCROLL DOWN FOR UPDATES ****
+
 Welcome to the companion GitHub to the APO-K2 Catalog Release. 
 
 NB: The APO-K2 paper is current in submission and these numbers might be liable to change with improvements to the catalog. The current version of the PDF for the catalog can be found here: 
