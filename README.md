@@ -4,7 +4,7 @@
 Welcome to the companion GitHub to the APO-K2 Catalog Release. 
 
 NB: The APO-K2 paper is current in submission and these numbers might be liable to change with improvements to the catalog. The current version of the PDF for the catalog can be found here: 
-https://www.jessicastasik.com/_files/ugd/7c73a7_9cf838f60fe945e4b0342d8d4115c1f7.pdf
+https://iopscience.iop.org/article/10.3847/1538-3881/ad0b13/pdf
 
 The selection function file contains its own README file describing how to use the selection function products. 
 
