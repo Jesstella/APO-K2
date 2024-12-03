@@ -87,4 +87,5 @@ For any questions, comments, or problems please contact the lead author Jessica 
 Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
 
 **** UPDATES **** 
+
 12.02.2024 -- New apo_k2_public_catalog.csv file uploaded to GitHub. Updated because roughly half of the previous Gaia DR3 source IDs were found to be incorrect. No other paramters were in error. 
