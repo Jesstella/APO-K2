@@ -1,4 +1,5 @@
 # APO-K2
+**** SCROLL DOWN FOR UPDATES ****
 Welcome to the companion GitHub to the APO-K2 Catalog Release. 
 
 NB: The APO-K2 paper is current in submission and these numbers might be liable to change with improvements to the catalog. The current version of the PDF for the catalog can be found here: 
@@ -83,3 +84,6 @@ The publically available APO-K2 catalog is named in this directory as 'apo_k2_pu
 
 For any questions, comments, or problems please contact the lead author Jessica Schonhut-Stasik at jessica.s.stasik@vanderbilt.edu.
 Accessible text and other additional information can be found at https://www.jessicastasik.com/apo-k2.
+
+**** UPDATES **** 
+12.02.2024 -- New apo_k2_public_catalog.csv file uploaded to GitHub. Updated because roughly half of the previous Gaia DR3 source IDs were found to be incorrect. No other paramters were in error. 
